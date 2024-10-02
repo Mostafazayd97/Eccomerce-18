@@ -2,7 +2,9 @@
   "name": "@eccomerce-18/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "npx nx run eccomerce-18:serve:development"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.2.0",
@@ -45,7 +47,7 @@
     "@tailwindcss/typography": "^0.5.15",
     "@types/express": "4.17.14",
     "@types/jest": "^29.5.12",
-    "@types/node": "18.16.9",
+    "@types/node": "22.2.0",
     "@typescript-eslint/utils": "^7.16.0",
     "angular-eslint": "^18.3.0",
     "autoprefixer": "^10.4.0",

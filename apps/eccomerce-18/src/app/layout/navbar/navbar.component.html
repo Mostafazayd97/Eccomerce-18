@@ -1,0 +1,49 @@
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <a class="btn btn-ghost text-3xl">
+                <div class="border-1 bg-secondary logo p-2" router-link="/">EC</div>
+            </a>
+        </div>
+    </div>
+    <div class="flex navbar-center">
+        <div class="menu menu-sm sm:menu-lg menu-horizontal px-1">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <details #productMenu>
+                    <summary>products</summary>
+                    <ul class="z-30">
+                        <li> <a href="/products">all</a></li>
+                    </ul>
+                </details>
+            </li>
+            <li>
+                <details #adminMenu>
+                    <summary>Admin</summary>
+                    <ul class="z-30">
+                        <li> <a href="/admin">all</a></li>
+                    </ul>
+                </details>
+            </li>
+        </div>
+    </div>
+    <div class="navbar-end pe-4 flex align-center">
+        <div class="dropdown dropdown-end pe-4">
+            <div role="button" tabindex="0">
+                <fa-icon [icon]="['fas','user']" class="menu-icon"></fa-icon>
+            </div>
+            <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box">
+                <li>
+                    <button class="link">Login</button>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown dropdown-end pe-2">
+            <div role="button" tabindex="0">
+                <fa-icon [icon]="['fas','shopping-cart']" class="menu-icon"></fa-icon>
+            </div>
+        </div>
+    </div>
+</div>

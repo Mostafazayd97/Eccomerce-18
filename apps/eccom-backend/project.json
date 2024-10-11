@@ -1,0 +1,17 @@
+{
+  "name": "eccom-backend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/eccom-backend/src",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nxrocks/nx-spring-boot:run",
+      "options": {
+        "root": "apps/ECCOM-BACKEND",
+        "args": [
+          "-Dspring-boot.run.profiles=local"
+        ]
+      }
+    }
+  }
+}
